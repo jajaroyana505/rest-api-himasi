@@ -1,0 +1,11 @@
+CI_ENV=development
+
+# Database Configuration
+DB_HOST=localhost
+DB_USER=
+DB_PASS=
+DB_NAME=
+
+# Json Web Token Configuration
+JWT_KEY=
+JWT_ALGO=HS256
