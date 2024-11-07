@@ -82,7 +82,7 @@ class Mahasiswa extends CI_Controller
             $this->output->set_status_header(400);
         } else {
             $this->form_validation->set_data($input_data);
-            $this->form_validation->set_rules('nim', 'NIM', 'required');
+            $this->form_validation->set_rules('nim', 'NIM', 'required|is_unique[mahasiswa.nim]');
             $this->form_validation->set_rules('nama', 'Nama', 'required');
             $this->form_validation->set_rules('kelas', 'Kelas', 'required');
             $this->form_validation->set_rules('asal_kampus', 'Asal Kampus', 'required');
